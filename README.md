@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Next.js Project
 
-First, run the development server:
+This project demonstrates a simple CRUD (Create, Read, Update, Delete) application built using React, Firebase Firestore. It enables users to manage a list of user entries with user-friendly UI components.
+
+
+## Features
+
+- **Create**: Add new users with a name and email.
+- **Read**: View the list of users fetched from Firestore in real-time.
+- **Update**: (Optional, can be added) Modify user details.
+- **Delete**: Remove users from the Firestore database.
+
+
+## Technologies
+
+**Next.js:** Frontend
+
+**Firebase Firestore:** Real-time NoSQL database.
+
+
+## Installation
+
+Install my-app with npm
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  npm create-next-app my-app
+  npm install
+  cd my-app
 ```
+    
+Run my-app with npm 
+```bash
+  npm run dev
+```
+## Environment Variables
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run this project, you will need to add the following environment variables to your .env file
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Firebase Firestore API Key:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`AIzaSyBfuxu-GEyf_YjrCHM2WpIle5EC7HmB5pA`
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
